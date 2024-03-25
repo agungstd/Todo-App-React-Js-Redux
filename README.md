@@ -1,1 +1,1 @@
-# todoapp-reactjs-redux
+# TodoApp ReactJs Redux
