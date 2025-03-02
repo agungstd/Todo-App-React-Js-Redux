@@ -27,6 +27,48 @@
       "completed": 0,
       "date": "1705642270560",
       "updated": 1705667468764
+    },
+    {
+      "id": 5,
+      "title": "Belajar CSS",
+      "completed": 0,
+      "date": "1705673000000",
+      "updated": 1705673000000
+    },
+    {
+      "id": 6,
+      "title": "Belajar TypeScript",
+      "completed": 0,
+      "date": "1705673100000",
+      "updated": 1705673100000
+    },
+    {
+      "id": 7,
+      "title": "Belajar Redux",
+      "completed": 0,
+      "date": "1705673200000",
+      "updated": 1705673200000
+    },
+    {
+      "id": 8,
+      "title": "Belajar Node.js",
+      "completed": 0,
+      "date": "1705673300000",
+      "updated": 1705673300000
+    },
+    {
+      "id": 9,
+      "title": "Belajar MongoDB",
+      "completed": 0,
+      "date": "1705673400000",
+      "updated": 1705673400000
+    },
+    {
+      "id": 10,
+      "title": "Belajar GraphQL",
+      "completed": 0,
+      "date": "1705673500000",
+      "updated": 1705673500000
     }
   ]
 }
