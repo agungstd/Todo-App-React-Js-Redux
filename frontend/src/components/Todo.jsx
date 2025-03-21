@@ -28,45 +28,41 @@ const Todo = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto sm:mt-8 p-4 bg-gray-100 rounded">
-      <h2 className="mt-3 mb-6 text-2xl font-bold text-center uppercase">
-        TODO APP
-      </h2>
-      <div className="flex items-center mb-4">
+    <div className="todo-container">
+      <h1 className="todo-title">TODO APP</h1>
+      
+      <div className="todo-input-container">
         <input
-          id="addTodoInput"
-          className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
           type="text"
-          placeholder="Add Todo"
+          className="todo-input"
+          placeholder="Add new todo..."
           value={newTodoText}
           onChange={(e) => setNewTodoText(e.target.value)}
         />
-        <button
-          className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
+        <button 
+          className="add-todo-btn"
           onClick={handleAddTodoClick}
         >
           <BsPlus size={20} />
         </button>
       </div>
-
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center mb-4">
-          <input
-            className="flex-grow p-2 border-b-2 border-gray-300 focus:outline-none focus:border-blue-500"
-            type="text"
-            placeholder="Search Todos"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <button
-            className="ml-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none"
-            onClick={handleSearchChange}
-          >
-            <BsSearch size={20} />
-          </button>
-        </div>
+      
+      <div className="search-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search todos..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <button 
+          className="search-btn"
+          onClick={handleSearchChange}
+        >
+          <BsSearch size={16} />
+        </button>
       </div>
-
+      
       <TodoList />
     </div>
   );
